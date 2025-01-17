@@ -5,14 +5,14 @@
 
   /* Colors */
   /* palette built with http://colormind.io/ */
-  --timberGreen: #052328;
-  --athensGray: #ecf0f2;
-  --gumbo: #75aaa8;
-  --steelBlue: #428ca3;
-  --plantation: #2a4a51;
-  --fruitSalad: #4aa56a;
-  --marigold: #c79532;
-  --pomegranate: #f44336;
+  --timberGreen: hsl(189, 78%, 9%);
+  --athensGray: hsl(200, 19%, 94%);
+  --gumbo: hsl(178, 24%, 56%);
+  --steelBlue: hsl(195, 89%, 29%);
+  --plantation: hsl(193, 56%, 15%);
+  --fruitSalad: hsl(141, 38%, 47%);
+  --marigold: hsl(40, 60%, 49%);
+  --pomegranate: hsl(4, 90%, 58%);
 
   --darkShade: var(--timberGreen);
   --lightShade: var(--athensGray);
@@ -42,6 +42,7 @@ body {
   font-weight: var(--fontWeight);
   font-optical-sizing: auto;
   letter-spacing: 0px;
+  color: var(--lightShade);
 }
 
 .sr-only {
