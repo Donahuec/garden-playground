@@ -1,12 +1,54 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --fontBody: 1rem;
+  --fontWeight: 400;
+  --fontFamily: "";
 
-html,
+  /* Colors */
+  /* palette built with http://colormind.io/ */
+  --timberGreen: #052328;
+  --athensGray: #ecf0f2;
+  --gumbo: #75aaa8;
+  --steelBlue: #428ca3;
+  --plantation: #2a4a51;
+  --fruitSalad: #4aa56a;
+  --marigold: #c79532;
+  --pomegranate: #f44336;
+
+  --darkShade: var(--timberGreen);
+  --lightShade: var(--athensGray);
+  --primary: var(--steelBlue);
+  --lightAccent: var(--gumbo);
+  --darkAccent: var(--plantation);
+
+  --success: var(--fruitSalad);
+  --warning: var(--marigold);
+  --error: var(--pomegranate);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
 body {
-  @apply bg-white dark:bg-gray-950;
+  font-family: var(--fontFamily);
+  font-size: var(--fontBody);
+  font-weight: var(--fontWeight);
+  font-optical-sizing: auto;
+  letter-spacing: 0px;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
